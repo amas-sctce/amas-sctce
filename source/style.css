@@ -1,7 +1,13 @@
-.body{
+body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 .fullscreen{
     width:100vw;
     height:100vh;
@@ -15,4 +21,40 @@ p,pre{
 }
 h2,h3,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
+}
+.makeItGrid{
+    display: grid;
+    grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+.centerUsingGrid{
+    grid-area: e;
+    justify-self: center;
+    align-self: center;
+}
+.rightTopGrid{
+    grid-area: c;
+    /* justify-self: center; */
+    /* align-self: center; */
+
+}
+.gradient {
+	background: linear-gradient(-45deg, #000000, #700B97, #000000, #3E065F);
+	background-size: 400% 400%;
+	animation: gradient 5s ease-in-out infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
