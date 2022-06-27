@@ -7,11 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./source/style.css"> 
+    <link rel="stylesheet" href="./source/loader.css">
     <link rel="stylesheet" href="./source/home.css">
+    <script>
+      function hideloader() {
+        document.getElementById("loader").style.display ="none";
+        console.log("Loding Stopped");
+      }
+     </script>
  </head>
-  <body>
-    <div class="home fullscreen makeItGrid gradient">
-      <button class="rightTopGrid" id="loginButton">Login</button>
+  <body onload="hideloader()">
+    <div class="loader" id="loader">
+      <div class="loaderContainer">
+        <div class="loaderItem loaderItem-1"></div>
+        <div class="loaderItem loaderItem-2"></div>
+        <div class="loaderItem loaderItem-3"></div>
+        <div class="loaderItem loaderItem-4"></div>
+      </div>
+    </div>
+  <div class="home fullscreen makeItGrid gradient">
       
       <svg
       class="centerUsingGrid"
@@ -87,9 +101,8 @@
    style="fill:#ffffff" />
 </g>
 </svg>
-  
     </div>
-    <div class="event fullscreen" style="background-color: blue;">
+    <!-- <div class="event fullscreen" style="background-color: blue;">
     <h2>
       Something is this
     </h2>
@@ -100,6 +113,7 @@
     <div class="contact fullscreen" style="background-color: green;">
       <pre>Contant page</pre>
     </div>
-    
+     -->
+
   </body>
 </html>
