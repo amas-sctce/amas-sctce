@@ -15,11 +15,11 @@ jobs:
       - name: Checkout the latest code
         uses: actions/checkout@v2
         with:
-          token: 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
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
       - name: Automatic Rebase
         uses: cirrus-actions/rebase@1.7
         with:
           autosquash: ${{ contains(github.event.comment.body, '/autosquash') || contains(github.event.comment.body, '/rebase-autosquash') }}
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
