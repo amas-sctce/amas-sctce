@@ -3,6 +3,7 @@ on:
   issue_comment:
     types: [created]
 jobs:
+  runs-on: ubuntu-latest
   rebase:
     name: Rebase
     if: >-
