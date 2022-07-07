@@ -1,0 +1,129 @@
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Syne:wght@700;800&display=swap'); */
+/* FONT USED */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Syne', sans-serif; */
+
+
+body{
+    /* margin: 0px;
+    padding: 0px; */
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background: linear-gradient(180deg, #000000 -8.1%, #3C065C 176.53%);
+    /* background: black; */
+    overflow-x: hidden;
+    
+    
+    
+}
+/* section{
+    overflow: hidden;
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+} */
+
+.fullscreen{
+    /* width:100vw;
+    height:100vh; */
+    /* background-color: red; */
+}
+/* h1{
+    font-family: 'Bangers', cursive;
+} */
+/* p,pre{
+    font-family: 'Merriweather', serif;
+} */
+h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color:beige
+}
+.makeItGrid{
+    display: grid;
+    grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+}
+.centerUsingGrid{
+    grid-area: e;
+    justify-self: center;
+    align-self: center;
+}
+.rightTopGrid{
+    grid-area: c;
+    /* justify-self: center; */
+    /* align-self: center; */
+
+}
+.gradient {
+	background: linear-gradient(-45deg, #000000, #700B97, #000000, #3E065F);
+	background-size: 400% 400%;
+	animation: gradient 5s ease-in-out infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.section{
+    
+
+}
+.contact_page{
+
+    /* display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black; */
+    /* flex-direction: column; */
+
+}
+.event_main,.execom_main{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    padding: 5%;
+    
+  }
+  .contact_main{
+    padding: 5%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+
+  }
+
+  .text_main {
+    background: url(https://media.giphy.com/media/kZw8SECb7VkozVZVDZ/giphy.gif);
+    /* background-size: contain; */
+    /* background-position: top left; */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight:900;
+    
+  }
+  
+ 
+  /* FORM_WITH_CAHPLIN */
+ 
+  
+  
+
+/*
+
+*/
